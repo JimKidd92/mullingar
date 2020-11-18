@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "mullingar-mrc"
+  },
+  "targets": {
+    "mullingar-mrc": {
+      "hosting": {
+        "mullingar-mrc-web-app": [
+          "mullingar-mrc"
+        ]
+      }
+    }
+  }
+}

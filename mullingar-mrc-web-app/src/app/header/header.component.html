@@ -1,0 +1,28 @@
+<header class="header-6">
+  <div class="branding">
+    <span class="title">Mullingar MRC</span>
+
+  </div>
+  <div class="header-nav">
+    <a routerLinkActive="active" routerLink="/home" class="nav-link nav-text">Home</a>
+    <a routerLinkActive="active" routerLink="/dashboard" class="nav-link nav-text">Dashboard</a>
+    <a routerLinkActive="active" routerLink="/news" class="nav-link nav-text">News</a>
+    <a routerLinkActive="active" routerLink="/explore" class="nav-link nav-text">Explore</a>
+  </div>
+  <div class="header-actions">
+    <clr-dropdown [clrCloseMenuOnItemClick]="false">
+      <button class=" btn btn-primary" clrDropdownTrigger aria-label="Dropdown demo button">
+        <clr-icon shape="cog"></clr-icon>
+        <clr-icon shape="caret down"></clr-icon>
+      </button>
+      <clr-dropdown-menu clrPosition="bottom-right" *clrIfOpen>
+        <label class="dropdown-header" aria-hidden="true">Dropdown header</label>
+        <div aria-label="Dropdown header Action 1" clrDropdownItem>Action 1</div>
+        <div aria-label="Dropdown header Action 2" clrDropdownItem>Action 2</div>
+        <div class="dropdown-divider" role="separator" aria-hidden="true"></div>
+        <div clrDropdownItem>Link 1</div>
+        <div clrDropdownItem>Link 2</div>
+      </clr-dropdown-menu>
+    </clr-dropdown>
+  </div>
+</header>
